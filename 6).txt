@@ -1,0 +1,19 @@
+6) Explique, com suas próprias palavras, o que faz o seguinte trecho de código:
+
+const createSongList = () => {
+  const list = document.createElement("ol");
+  for (let i = 0; i < songs.length; i++) {
+    const item = document.createElement("li");
+    item.appendChild(document.createTextNode(songs[i].slice(0,-4)));
+    list.appendChild(item);
+  }
+  return list;
+};
+
+R: A constante createSongList vai executar uma função
+ onde terá uma variável list que irá criar o elemento de lista, ol, no HTML. 
+ Depois, temos o for, que vai percorrer a lista, enumerando 
+ cada música como um elemento, devido ao length, 
+ onde a sintaxe de cada elemento, 
+ será o nome da música correspondente. 
+ E por fim, listará as músicas.
