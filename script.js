@@ -29,7 +29,7 @@ const songs = [
     document.querySelector("#headphones").classList.remove("pulse");
   
     const source = document.getElementById("source");
-    source.src = "songs/" + e.target.innerText;
+    source.src = "Songs/" + e.target.innerText;
     document.getElementById(
       "currentSong"
     ).innerText = `Now Playing:  ${e.target.innerText}`;
